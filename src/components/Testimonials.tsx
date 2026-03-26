@@ -44,7 +44,7 @@ const Testimonials = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-sm text-card-foreground">{chat.name}</p>
-                    <p className="text-xs text-muted-foreground">{chat.service}</p>
+                  
                   </div>
                 </div>
                 <div className="relative overflow-hidden" style={{ maxHeight: 320 }}>
