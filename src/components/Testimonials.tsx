@@ -38,16 +38,8 @@ const Testimonials = () => {
                 className="rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_60px_-15px_hsl(211_100%_55%/0.3)] cursor-pointer bg-card border border-border"
                 onClick={() => setSelected(i)}
               >
-                <div className="p-4 flex items-center gap-3 border-b border-border">
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold bg-primary text-primary-foreground">
-                    {chat.name.charAt(0)}
-                  </div>
-                  <div>
-                    <p className="font-semibold text-sm text-card-foreground">{chat.name}</p>
-                  
-                  </div>
-                </div>
-                <div className="relative overflow-hidden" style={{ maxHeight: 320 }}>
+            
+                <div className="relative overflow-hidden" style={{ maxHeight: 350 }}>
                   <img
                     src={chat.img}
                     alt={`Chat with ${chat.name}`}
