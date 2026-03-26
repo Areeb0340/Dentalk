@@ -1,13 +1,17 @@
 import { useState } from "react";
 import { X } from "lucide-react";
-import chat1 from "@/assets/chat-1.png";
-import chat2 from "@/assets/chat-2.png";
-import chat3 from "@/assets/chat-3.png";
+import chat1 from "/1.png";
+import chat2 from "/2.png";
+import chat3 from "/3.png";
+import chat4 from "/4.png";
+import chat5 from "/5.png";
 
 const chats = [
-  { img: chat1, name: "Liam Carter", service: "Teeth Whitening" },
-  { img: chat2, name: "Mr Jones", service: "Emergency Appointment" },
-  { img: chat3, name: "Noah Thompson", service: "Dental Checkup" },
+  { img: chat1, name: "Noah Thompson", },
+  { img: chat2, name: "Mr Jones",  },
+  { img: chat3, name: "Lime carter", },
+   { img: chat4, name: "Harry Wilson",  },
+    { img: chat5, name: "Caven Clark",},
 ];
 
 const Testimonials = () => {
@@ -27,7 +31,7 @@ const Testimonials = () => {
             See how Dentalk handles patient inquiries, books appointments, and confirms payments — all automatically via WhatsApp.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             {chats.map((chat, i) => (
               <div
                 key={i}
