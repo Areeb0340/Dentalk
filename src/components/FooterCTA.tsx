@@ -1,4 +1,4 @@
-import { ArrowRight, Instagram, Facebook, Linkedin } from "lucide-react";
+import { ArrowRight, Instagram, Facebook, Linkedin, MessageCircle, Mail, Phone } from "lucide-react";
 
 const FooterCTA = () => (
   <>
@@ -33,9 +33,9 @@ const FooterCTA = () => (
     </section>
 
     {/* Footer */}
-    <footer className="py-10 px-6 bg-background border-t border-border">
+    <footer id="contact" className="py-10 px-6 bg-background border-t border-border">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
@@ -51,7 +51,7 @@ const FooterCTA = () => (
               <a href="https://www.instagram.com/dentalkservices/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61575404900384" className="text-muted-foreground hover:text-primary transition-colors">
                 <Facebook size={20} />
               </a>
               <a href="https://www.linkedin.com/in/robert-jones-3904293ba/" className="text-muted-foreground hover:text-primary transition-colors">
@@ -95,8 +95,40 @@ const FooterCTA = () => (
                 </a>
               </li>
             </ul>
+            
           </div>
+         <div>
+  <h4 className="text-card-foreground font-semibold mb-4">Contact Us</h4>
+  <ul className="space-y-3 text-sm text-muted-foreground">
+    
+    <li className="flex items-center gap-2">
+      <Phone size={16} className="text-primary" />
+      <span>For Call:</span>
+      <a href="tel:+15126166071" className="hover:text-primary transition-colors">
+        +1 512-616-6071
+      </a>
+    </li>
+
+    <li className="flex items-center gap-2">
+      <MessageCircle size={16} className="text-primary" />
+      <span>WhatsApp:</span>
+      <a href="https://wa.me/15142214112" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+        +1 (514) 221-4112
+      </a>
+    </li>
+
+    <li className="flex items-center gap-2">
+      <Mail size={16} className="text-primary" />
+      <span>Email:</span>
+      <a href="mailto:dentalkservices@gmail.com" className="hover:text-primary transition-colors">
+        dentalkservices@gmail.com
+      </a>
+    </li>
+
+  </ul>
+</div>
         </div>
+        
 
         <div className="border-t border-border pt-6 text-center">
           <p className="text-muted-foreground text-sm">

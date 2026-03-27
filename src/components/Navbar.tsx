@@ -16,17 +16,23 @@ const Navbar = () => (
         <a href="#features" className="text-muted-foreground hover:text-card-foreground transition-colors text-sm">Features</a>
         <a href="#how-it-works" className="text-muted-foreground hover:text-card-foreground transition-colors text-sm">How It Works</a>
         <a href="#demo" className="text-muted-foreground hover:text-card-foreground transition-colors text-sm">Demo</a>
+        <a href="#contact" className="text-muted-foreground hover:text-card-foreground transition-colors text-sm">Contact Us</a>
       </div>
       
       {/* Button - properly sized on mobile, no overflow */}
-      <a
-        href="https://calendar.app.google/S4wLR9itXhbPMbPk7"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-primary text-primary-foreground px-3 py-1.5 sm:px-5 sm:py-2.5 rounded-lg text-xs sm:text-sm font-semibold flex items-center gap-1 sm:gap-2 hover:brightness-110 transition whitespace-nowrap shrink-0"
-      >
-        Book Appointmen <ArrowRight size={14} className="sm:w-4 sm:h-4" />
-      </a>
+     <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+  
+  <a
+    href="https://calendar.app.google/S4wLR9itXhbPMbPk7"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-primary text-primary-foreground px-3 py-1.5 sm:px-5 sm:py-2.5 rounded-lg text-xs sm:text-sm font-semibold flex items-center gap-1 sm:gap-2 hover:brightness-110 transition whitespace-nowrap"
+  >
+    Book Appointment <ArrowRight size={14} className="sm:w-4 sm:h-4" />
+  </a>
+
+</div>
+
     </div>
   </nav>
 );
